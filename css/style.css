@@ -769,7 +769,7 @@
 /*** more information end***/
 /*** signup start ****/
 /* Répéter la même chose pour la page d'inscription */
-.signup body {
+body.signup  {
     background-image: url("../img/1.png");
     background-size: cover;
     background-position: center;
@@ -777,7 +777,7 @@
     background-attachment: fixed;
 }
 
-.signup body::before {
+body.signup::before {
     content: "";
     position: absolute;
     top: 0;
@@ -791,7 +791,10 @@
 
 /**** login start ***/
 /* Idem pour la page de connexion */
-.login body {
+
+
+
+ body.login {
     background-image: url("../img/1.png");
     background-size: cover;
     background-position: center;
@@ -799,7 +802,7 @@
     background-attachment: fixed;
 }
 
-.login body::before {
+ body.login::before {
     content: "";
     position: absolute;
     top: 0;
@@ -815,7 +818,7 @@
 /* Style global */
 
 /* Arrière-plan sombre */
-.demo body {
+body.demo {
     background-image: url("../img/1.png");
     background-size: cover;
     background-position: center;
@@ -823,7 +826,7 @@
     background-attachment: fixed;
 }
 
-.demo body::before {
+body.demo::before {
     content: "";
     position: absolute;
     top: 0;

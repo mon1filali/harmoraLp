@@ -767,13 +767,9 @@
     line-height: 1.6;
 }
 /*** more information end***/
-
-
-/*** demo start ***/
-/* Style global */
-
-/* Arrière-plan sombre */
-body {
+/*** signup start ****/
+/* Répéter la même chose pour la page d'inscription */
+.signup body {
     background-image: url("../img/1.png");
     background-size: cover;
     background-position: center;
@@ -781,7 +777,53 @@ body {
     background-attachment: fixed;
 }
 
-body::before {
+.signup body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/**** signup end*****/
+
+/**** login start ***/
+/* Idem pour la page de connexion */
+.login body {
+    background-image: url("../img/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/**** login end****/
+
+/*** demo start ***/
+/* Style global */
+
+/* Arrière-plan sombre */
+.demo body {
+    background-image: url("../img/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.demo body::before {
     content: "";
     position: absolute;
     top: 0;
